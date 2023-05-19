@@ -1,0 +1,23 @@
+.nosotros-content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.parrafo{
+    text-align: justify;
+    padding: 0.7em 0;    
+}
+
+.fotos{
+    margin: 1.5em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.fotos img{
+    margin: 0.5em;
+    height: 250px;
+    width: 250px;
+}
+    
+    

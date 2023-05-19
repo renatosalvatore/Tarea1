@@ -1,0 +1,120 @@
+.centrar-texto{
+    text-align: center;
+}
+
+span{
+    color: rgb(255,31,112);
+}
+
+#info-empresa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%,
+}
+
+
+#info-empresa article{
+    color: white;
+    height: 200px;
+    padding-top: 2.8em;
+    margin: 0.8em;
+    width: 250px
+}
+
+#art-somos{
+    background-image: url("../img/paginaInicial/accion_quienes_somos.jpg");
+    background-size: cover;
+}
+
+#art-servicios{
+    background-image: url("../img/paginaInicial/accion_servicios.jpg");
+    background-size: cover;
+}
+
+#art-contacto{
+    background-image: url("../img/paginaInicial/accion_contactanos.jpg");
+    background-size: cover;
+}
+
+#info-empresa div p{
+    text-align: justify;
+    padding: 0.3em 0.4em;
+}
+
+#cinta-copyright{
+    background-color: black;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/***Resposive***/
+
+@media (min-width:100px) and (max-width:900px){
+    
+    header .contenedor{
+        width: 95%;
+    }
+    
+    #menu{
+        background-color: rgba(255,255,255,0.9);
+        position: absolute;
+        top: 70px;left: 0;
+        height: 100vh;
+        transition: all 0.5s;
+        transform: translateX(-100%);
+        width: 100%;
+    }
+    
+    
+    #menu ul{
+        flex-direction: column;
+    }
+    
+    #menu ul a{
+        display: block;
+        padding: 15px;
+        border: none;
+    }
+    
+    #menu ul a:hover{
+        color: white;
+        background-color: rgba(255,31,112,0.9);
+    }
+    
+    .contenedor{
+        width: 98%;
+    }
+    
+    #banner{
+        height: 350px;
+    }
+    
+    #dog{
+        display: none;
+    }
+    
+    #info-banner{
+        width: 95%;
+    }
+    
+    .icon-menu{
+        display: block;
+        font-size: 30px;
+    }
+    
+    #menu-bar:checked ~ #menu{
+        transform: translateX(0%);
+    }
+    
+    .nosotros-content{
+        flex-wrap: wrap;
+    }
+    .nosotros-content img{
+       margin: auto;
+    }
+    
+}
+
+
